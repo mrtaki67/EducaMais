@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;500&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+:root {
+    --destaque: #e67e22;
+    --primaria: #3498db;
+    --cta: #2ecc71;
+    --fundo: #ffffff;
+    --textoprincipal: #333333;
+    --destacartexto: #2980b9;
+    --sucesso: #a9dfbf;
+}
+
+body {
+    background: var(--fundo);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--fundo);
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.navigation .logo {
+    color: var(--textoprincipal);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.logo span {
+    color: var(--destaque);
+    font-size: 2rem;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navigation ul li a {
+    color: var(--textoprincipal);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.navigation ul li a:hover {
+    color: var(--destaque);
+}
+
+.nav-btn {
+    padding: 15px 45px;
+    background: var(--destaque);
+    border-radius: 10px;
+    color: var(--fundo);
+    transition: all 0.5s;
+}
+
+.nav-btn:hover {
+    background-color: #ce711f;
+}
+
+
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30% 10%;
+    width: 100%;
+    height: 100vh;
+    gap: 3rem;
+}
+
+.home-img img {
+    width: 100%;
+    box-shadow: 0 0.1rem 0.5rem;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.home-destaques {
+    max-width: 37rem;
+}
+
+.home-destaques .text-h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 2.5rem;
+    color: var(--textoprincipal);
+
+}
+
+.curso-img {
+    width: 100%;
+    margin-bottom: 5rem;
+    box-shadow: 0 0.1rem 0.5rem ;
+    border-radius: 10px;
+}
+
+.home-cursos {
+    background: linear-gradient();
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 2rem 8rem;
+    gap: 2rem;
+    text-align: justify;
+}
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+/* Reset de margens e preenchimentos padrão para garantir consistência */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilização básica para o rodapé */
+  footer {
+    background-color: #ffffff; /* Cor de fundo do rodapé */
+    color: #000000; /* Cor do texto no rodapé */
+    padding: 20px 0; /* Espaçamento interno no topo e na parte inferior do rodapé */
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+  }
+  
+  .container {
+    max-width: 1200px; /* Largura máxima do conteúdo do rodapé */
+    margin: 0 auto; /* Centralizar o conteúdo na página */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-right: 20px; /* Espaçamento entre as seções do rodapé */
+  }
+  
+  .footer-section h3 {
+    color: #000000; /* Cor do título da seção */
+  }
+  
+  .footer-section ul {
+    list-style: none; /* Remover marcadores de lista */
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px; /* Espaçamento entre os itens da lista */
+  }
+  
+  .footer-bottom {
+    margin-top: 20px; /* Espaçamento superior para a seção de direitos autorais */
+  }
+  
+  /* Estilização para links no rodapé */
+  .footer-section a {
+    color: #000000; /* Cor dos links no rodapé */
+    text-decoration: none; /* Remover sublinhado padrão */
+  }
+  
+  /* Estilização para links no rodapé quando hover (passar o mouse sobre) */
+  .footer-section a:hover {
+    text-decoration: underline; /* Adicionar sublinhado ao passar o mouse sobre os links */
+  }
+  
+
+@media (max-width: 768px) {
+    .nav-btn{
+        text-align: center;
+        font-size: 10pt;
+        padding: 10px;
+    }
+
+    .nav-itens {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        gap: -10px;
+        transition: 0.3s;
+    }
+
+    .home {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 0;
+        padding-top: 10rem;
+    }
+
+    .home-img img {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        gap: -10px;
+        transition: 0.3s;
+    }
+
+    .home-cursos {
+        display: block;
+        margin: 0;
+    }
+
+    .cursos {
+        align-items: center;
+        margin: 3rem;
+    }
+
+    .curso-img{
+        width: 60vw;
+        
+    }
+
+    footer{
+        padding: 2rem;
+    }
+}
